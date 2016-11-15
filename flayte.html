@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.democlass {
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<h1>Mira como cambia</h1>
+<p>Hace click porque si no mah.</p>
+
+<button id="myBtn">MIRA COMO MUESTRA LOCO</button>
+<button onclick="myFunction()">JUEGUE LOCO</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", displayText);
+
+function displayText() {
+    document.getElementById("demo").innerHTML = "ME QUIERO CORTAR LA .....";
+}
+
+function myFunction() {
+    document.getElementsByTagName("H1")[0].setAttribute("class", "democlass"); 
+}
+
+</script>
+</body>
+</html> 
+
+
