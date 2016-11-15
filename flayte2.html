@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.textito {
+	display: none;
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<p id="demo" class="textito">MIRAME COMO CAMBIO PAPU</p>
+	<button type="button" id="mostrar">MIRA COMO MUESTRA LOCO</button>
+	<button type="button" id="color">MIRA COMO PINTA LOCO</button>
+
+<!-- Dependencias JS -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+
+	<script type="text/javascript">
+		$('#mostrar').click(function(){
+			$('.textito').css('display','block');
+		});
+		$('#color').click(function(){
+			$('.textito').css('color','red');
+		});
+	</script>	
+
+</body>
+</html> 
